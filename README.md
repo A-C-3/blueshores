@@ -42,6 +42,7 @@ The default admin credentials for the backend application are:
 ### Step 1: Clone the Repository
 
 Clone the repository to your local machine:
+
 ```bash
 git clone https://github.com/rowdeecana14/blueshores.git
 cd blueshores
@@ -50,16 +51,18 @@ cd blueshores
 ### Step 2: Set Up Environment
 
 Copy the .env.example file to .env and update the database credentials:
+
 ```bash
 cp .env.example .env
 ```
 
 Configure your .env file with the correct MySQL credentials:
+
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=Vote Tracks
+DB_DATABASE=blueshores
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -67,6 +70,7 @@ DB_PASSWORD=
 ### Step 3: Install Backend Dependencies
 
 Run the following command to install PHP dependencies using Composer:
+
 ```bash
 composer install
 ```
@@ -74,6 +78,7 @@ composer install
 ### Step 4: Install Frontend Dependencies
 
 Navigate to the frontend directory and install the required JavaScript dependencies:
+
 ```bash
 npm install
 ```
@@ -81,20 +86,23 @@ npm install
 ### Step 5: Generate Application Key
 
 Run the following command to generate your application key:
+
 ```bash
 php artisan key:generate
 ```
 
-### Step 6: Initialize the application 
+### Step 6: Initialize the application
 
 Run the following Artisan command to initialize the application:
+
 ```bash
 php artisan app:initialize
 ```
 
-### Step 7: Run the application 
+### Step 7: Run the application
 
 Run the following command to start the application:
+
 ```bash
 composer run dev
 ```
